@@ -1,0 +1,139 @@
+:root {
+  --transition: all 0.4s linear;
+}
+body {
+  color: #fff;
+}
+
+/* home */
+#home {
+  padding-top: 0.1px;
+  min-height: 100vh;
+  background: linear-gradient(rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)),
+    url(../home-bg.jpg) center/cover no-repeat;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+.fa-close {
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  font-size: 25px;
+  transition: var(--transition);
+}
+.fa-close:hover {
+  transform: rotate(180deg);
+  color: rgba(214, 46, 51, 0.4);
+  cursor: pointer;
+}
+.menu-links {
+  padding-top: 60px;
+  position: fixed;
+  background-color: #111;
+  height: 100%;
+  width: 0;
+  overflow: hidden;
+}
+.menu-link {
+  color: inherit;
+  padding: 1rem 3rem;
+  font-size: 25px;
+  text-transform: capitalize;
+  transition: var(--transition);
+}
+.menu-link:hover {
+  padding-left: 3.75rem;
+  color: rgba(214, 46, 51, 0.4);
+}
+.home-center {
+  margin-top: 200px;
+}
+.home-center h2 {
+  font-size: 60px;
+}
+.menu-btn {
+  font-size: 30px;
+}
+.menu-btn:active {
+  border: 0;
+}
+
+/* slider section */
+#slider {
+  margin: 100px auto;
+  width: 60%;
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#slider h3 {
+  background-color: rgba(214, 46, 51, 0.6);
+  padding: 10px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+#slider div {
+  display: none;
+  background-color: #ccc;
+  padding: 10px;
+}
+#slider div:nth-child(2) {
+  display: block;
+}
+
+/* COUNT SECTION */
+#count {
+  background: linear-gradient(rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)),
+    url(../join-us-bg.jpg) center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding-block: 2rem;
+}
+#count .count-box {
+  padding: 50px;
+  font-weight: 700;
+  font-size: 30px;
+}
+@media (max-width: 575px) {
+  #slider {
+    width: 80%;
+  }
+  #count .count-box {
+    max-width: 300px !important;
+    margin: auto;
+  }
+}
+
+/* contact section */
+#contact {
+  color: #777;
+}
+#contact h2,
+#contact h3 {
+  color: #444;
+  font-weight: bolder;
+}
+.details i {
+  color: #777;
+}
+.social-icons li a {
+  margin: 5px;
+  border: 1px solid #999;
+  color: #999;
+  padding: 7px;
+  transition: var(--transition);
+}
+.social-icons li a:hover {
+  background-color: #d62e33;
+  border-color: #d62e33;
+  color: #fff;
+}
+.contact-form textarea {
+  min-height: 150px;
+}
